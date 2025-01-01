@@ -1,4 +1,4 @@
-#creating the Graham-Schmidt Process (and some other linear algebra vector stuff) using functional programming techniques in Python
+#creating the Gram-Schmidt Process (and some other linear algebra vector stuff) using functional programming techniques in Python
 
 import math
 
@@ -103,7 +103,7 @@ def normalizeMatrix(M): #given a matrix M, returns the normalized matrix M
     else:
         return [normalize(M[0])] + normalizeMatrix(M[1:])
 
-def GrahamSchmidtProcess(vectorBasis): #given a vector basis, returns a orthogonal matrix using the Graham Schmidt Process
+def GramSchmidtProcess(vectorBasis): #given a vector basis, returns a orthogonal matrix using the Gram-Schmidt Process
     def gspHelper(existingBasis,remainingBasis):
         if remainingBasis == []:
             return existingBasis
